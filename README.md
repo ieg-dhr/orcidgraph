@@ -42,7 +42,7 @@ Check out the git repository:
 
 ~~~bash
 cd orcidgraph
-git checkout https://github.com/ieg-dhr/orcidgraph src
+git checkout https://github.com/ieg-dhr/orcidgraph.git src
 ~~~
 
 Now edit the file `orgcidgraph/src/retrieve.rb` configuring the settings in the
