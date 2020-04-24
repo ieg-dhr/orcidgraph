@@ -7,7 +7,7 @@
 You will need: 
 * a [recent version of ruby](https://www.ruby-lang.org/en/downloads/branches/) including a couple of gems (nokogiri, pry, httpclient, geocoder)
 * [Docker](https://www.docker.com/)
-* the [ORCID Public Data File](https://support.orcid.org/hc/en-us/articles/360006897394-How-do-I-get-the-public-data-file-) (about 10 GB)  
+* the [ORCID Public Data File](https://support.orcid.org/hc/en-us/articles/360006897394-How-do-I-get-the-public-data-file-) (about 11 GB)  
     **Note:** The ORCID files are generated in October each year and are not updated
 until the next year. This explains why some of the ORCID IDs you are looking for
 aren’t found. ORCID publishes this file under a [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
