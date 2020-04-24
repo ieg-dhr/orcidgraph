@@ -25,8 +25,8 @@ orcidgraph
 Place the data file in the orcidgraph/cache directory.
 
 The file is compressed as
-a tar.gz. A format that allows accessing single files without extracting
-the entire archive is needed. Zip works for this purpose. The conversion takes quite some
+a tar.gz. For the further progress a format that allows accessing single files without extracting
+the entire archive is needed – *zip* works for this purpose. The conversion takes quite some
 time and it involves extracting the tar.gz which is then about 210 GB in size.
 Make sure you don't run out of disk space. ;)
 
