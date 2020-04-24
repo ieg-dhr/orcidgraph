@@ -35,14 +35,14 @@ Make sure you don't run out of disk space ;)
 ~~~bash
 cd orcidgraph/cache
 tar -xzf ORCID_2019_summaries.tar.gz
-zip -r archives ORCID_2019_summaries.zip
+zip -r ORCID_2019_summaries.zip summaries
 ~~~
 
 Check out the git repository:
 
 ~~~bash
 cd orcidgraph
-git checkout https://github.com/ieg-dhr/orcidgraph.git src
+git clone https://github.com/ieg-dhr/orcidgraph.git src
 ~~~
 
 Now edit the file `orgcidgraph/src/retrieve.rb` configuring the settings in the
