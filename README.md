@@ -39,7 +39,7 @@ cd orcidgraph
 git clone https://github.com/ieg-dhr/orcidgraph.git src
 ~~~
 
-Now edit the file `orgcidgraph/src/retrieve.rb` configuring the settings in the
+Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the
 top of the file. The file has comments on the various options.
 
 Start the neo4j docker container with
