@@ -51,7 +51,7 @@ sh neo.sh
 ~~~
 
 Neo4j should now be available at http://127.0.0.1:7474. There is no username or
-password, just hit the login button. The db creates a data directory at
+password, just hit the “connect” button. The db creates a data directory at
 `orcidgraph/cache/neo_data`. Modify `neo.sh` to change this path.
 
 With the db up and running, run the actual script:
