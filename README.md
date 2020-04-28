@@ -42,7 +42,7 @@ git clone https://github.com/ieg-dhr/orcidgraph.git src
 Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the
 top of the file. The file has comments on the various options.
 
-Start the neo4j docker container with
+Start the Neo4j Docker container with
 
 ~~~
 cd orcidgraph/src
@@ -63,5 +63,5 @@ ruby retrieve.rb
 When its done, a query like `MATCH (n) RETURN n` should show a graph
 representation with your ORCID IDs.
 
-If you want to start over, just stop neo4j, remove the neo_data directory and
+If you want to start over, just stop Neo4j, remove the `neo_data` directory and
 start it again. This way, the script has an empty neo4j database to work with.
