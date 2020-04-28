@@ -23,7 +23,6 @@ orcidgraph
 ~~~
 
 Place the data file in the `orcidgraph/cache` directory.
-
 The file is compressed as a *tar.gz*. For the further progress a format that allows accessing single files without extracting the entire archive is needed – *zip* works for this purpose. The conversion takes quite some time and it involves extracting the *tar.gz* which is then about 210 GB in size. So a little patience is required here and make sure you don't run out of disk space. ;)
 
 ~~~bash
@@ -43,7 +42,7 @@ Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the t
 The path to the required file ORCID_LIST (ORCIDs.csv) is also specified here. This file must be created and contains the list of ORCID-IDs that need to be extracted. 
 The path to the file ORG_MATCHES (org_matches.json) is also described here. A file in which it can be defined for the export if you want to have a mapping between one name and another to avoid redundancies (A step that is necessary due to the free input options in the ORCID registy. For example: 1. IEG -> Leibniz Institute of European History, 2. IEG Mainz -> Leibniz Institute of European History, 3. …).
 
-Start the Neo4j Docker container with
+Start the Neo4j Docker container with:
 
 ~~~
 cd orcidgraph/src
@@ -51,10 +50,10 @@ sh neo.sh
 ~~~
 
 Neo4j should now be available at http://127.0.0.1:7474. There is no username or
-password, just hit the “connect” button. The db creates a data directory at
+password, just hit the “connect” button. The database creates a data directory at
 `orcidgraph/cache/neo_data`. Modify `neo.sh` to change this path.
 
-With the db up and running, run the actual script:
+With the database up and running, run the actual script:
 
 ~~~
 cd orcidgraph/src
