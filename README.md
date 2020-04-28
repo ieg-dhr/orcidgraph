@@ -46,7 +46,7 @@ Start the Neo4j Docker container with
 
 ~~~
 cd orcidgraph/src
-sh neo.sh # ctrl-c to stop the server
+sh neo.sh
 ~~~
 
 Neo4j should now be available at http://127.0.0.1:7474. There is no username or
@@ -63,5 +63,5 @@ ruby retrieve.rb
 When its done, a query like `MATCH (n) RETURN n` should show a graph
 representation with your ORCID IDs.
 
-If you want to start over, just stop Neo4j, remove the `neo_data` directory and
+If you want to start over, just stop Neo4j (# ctrl-c), remove the `neo_data` directory and
 start it again. This way, the script has an empty Neo4j database to work with.
