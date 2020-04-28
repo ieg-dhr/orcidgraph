@@ -39,8 +39,9 @@ cd orcidgraph
 git clone https://github.com/ieg-dhr/orcidgraph.git src
 ~~~
 
-Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the
-top of the file. The file has comments on the various options.
+Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the top of the file. The file has comments on the various options.
+The path to the required file ORCID_LIST (ORCIDs.csv) is also specified here. This file must be created and contains the list of ORCID-IDs that need to be extracted. 
+The path to the file ORG_MATCHES (org_matches.json) is also described here. A file in which it can be defined for the export if you want to have a mapping between one name and another to avoid redundancies (A step that is necessary due to the free input options in the ORCID registy. For example: 1. IEG -> Leibniz Institute of European History, 2. IEG Mainz -> Leibniz Institute of European History, 3. …).
 
 Start the Neo4j Docker container with
 
