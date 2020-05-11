@@ -25,8 +25,9 @@ orcidgraph
 - src
 ~~~
 
-Place the data file in the `orcidgraph/cache` directory.
-The file is compressed as a *tar.gz*. For the further progress a format that allows accessing single files without extracting the entire archive is needed – *zip* works for this purpose. The conversion takes quite some time and it involves extracting the *tar.gz* which is then about 210 GB in size. So a little patience is required here and make sure you don't run out of disk space. ;)
+Place the data file in the `orcidgraph/cache` directory. The file is compressed as a *tar.gz*. To proceed further, you will need a format that allows accessing single files without extracting the entire archive – *zip* works for this purpose. The conversion takes quite some time and it involves extracting the *tar.gz* which is then about 210 GB in size. So a little patience is required here, and make sure you don't run out of disk space. ;)
+
+
 
 ~~~bash
 cd orcidgraph/cache
@@ -41,9 +42,13 @@ cd orcidgraph
 git clone https://github.com/ieg-dhr/orcidgraph.git src
 ~~~
 
-Now edit the file `orcidgraph/src/retrieve.rb` configuring the settings in the top of the file. The file has comments on the various options.
-The path to the required file ORCID_LIST (ORCIDs.csv) is also specified here. You have to create this file which contains the list of ORCID-IDs you want to be extracted. 
-The path to the file ORG_MATCHES (org_matches.json) is also described here. A file in which you can define for the export if you want to have a mapping between one name and another to avoid redundancies (a step that is necessary due to the free input options in the ORCID registy. For example: 1. IEG -> Leibniz Institute of European History, 2. IEG Mainz -> Leibniz Institute of European History, 3. …).
+Now edit the file `orcidgraph/src/retrieve.rb` and configure the settings at the top of the file. The file has comments on the various options. The path to the required file ORCID_LIST (ORCIDs.csv) is also specified here. You have to create this file, which contains the list of ORCID-IDs you want to be extracted. The path to the file ORG_MATCHES (org_matches.json) is also described here. This is a file in which you can set definitions for your export to map correspondences between one name and another in order to avoid redundancies (a necessary step due to the free-input options in the ORCID registry). For example: 1. IEG -> Leibniz Institute of European History, 2. IEG Mainz -> Leibniz Institute of European History, 3. …).
+
+
+
+
+
+
 
 Start the Neo4j Docker container with:
 
