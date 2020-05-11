@@ -1,6 +1,9 @@
 # Orcidgraph
 
-The open registration for the unique identification of scientific and other academic authors provided by the [ORCID organization](https://orcid.org) contains a large amount of structured data on these authors and – depending on the completeness of the data set – also on their institutional affiliation. However, it is not possible to directly read out corresponding (simultaneous or delayed) links between authors via their affiliations. Orcidgraph offers a solution for this. The open provided ORCID dataset [(ORCID Public Data File)](https://support.orcid.org/hc/en-us/articles/360006897394-How-do-I-get-the-public-data-file-) is exported to Neo4j, where, in addition to corresponding queries in Cypher, the visual options of the Neo4j browser for a clear representation of the connection between the entities Person and Affiliation are enabled.
+The open registration for the unique identification of scientific and other academic authors provided by the [ORCID organization](https://orcid.org) contains a large amount of structured data on these authors and – depending on the completeness of the data set – also on their institutional affiliations. However, it is not possible to directly read out corresponding (simultaneous or time-delayed) links between authors via their affiliations. Orcidgraph offers a solution for this. The openly available ORCID dataset [(ORCID Public Data File)](https://support.orcid.org/hc/en-us/articles/360006897394-How-do-I-get-the-public-data-file-) is exported to Neo4j, where, in addition to corresponding queries in Cypher, the visual options offered by Neo4j's browser enable a clear representation of the connections between the entities “Person” and “Affiliation”.
+
+
+
 
 ## Requirements
 
