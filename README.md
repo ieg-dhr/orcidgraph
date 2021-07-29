@@ -7,7 +7,7 @@ The open registration for the unique identification of scientific and other acad
 
 ## Requirements
 
-You will need: 
+You will need:
 * a [recent version of ruby](https://www.ruby-lang.org/en/downloads/branches/) including a couple of gems (nokogiri, pry, httpclient, geocoder)
 * [Docker](https://www.docker.com/)
 * the [ORCID Public Data File](https://support.orcid.org/hc/en-us/articles/360006897394-How-do-I-get-the-public-data-file-) (about 11 GB)  
