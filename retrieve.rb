@@ -3,6 +3,9 @@
 # The location of the orcid.org public data file (zip format)
 ORCID_PUBLIC_DATA_FILE='../cache/ORCID_2019_summaries.zip'
 
+# Alternatively, configure the path to the extracted ORCID summaries directory
+ORCID_PUBLIC_DATA_DIR='../cache/ORCID_2020_10_summaries'
+
 # File for the geo cache (empty json file will be created if it doesn't exist)
 GEO_CACHE='../cache/geo_cache.json'
 
@@ -197,13 +200,18 @@ class Combinator
     unless @orcid_cache.keys.include?(orcid)
       @orcid_cache[orcid] = begin
         checksum = orcid[-3..-1]
-        file = "summaries/#{checksum}/#{orcid}.xml"
-        result = spawn('unzip', '-p', ORCID_PUBLIC_DATA_FILE, file)
-        if result[:status] == 0
-          result[:stdout]
+        file = "#{ORCID_PUBLIC_DATA_DIR}/#{checksum}/#{orcid}.xml"
+        if File.exist?(file)
+          File.read(file)
         else
-          STDERR.puts result[:stderr]
-          nil
+          file = "summaries/#{checksum}/#{orcid}.xml"
+          result = spawn('unzip', '-p', ORCID_PUBLIC_DATA_FILE, file)
+          if result[:status] == 0
+            result[:stdout]
+          else
+            STDERR.puts result[:stderr]
+            nil
+          end
         end
       end
     end
